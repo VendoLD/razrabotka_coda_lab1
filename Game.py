@@ -15,7 +15,6 @@ def on_a_click(player):
     player.move_left()
 
 def on_s_click(player):
-    print(player)
     player.move_down()
 
 

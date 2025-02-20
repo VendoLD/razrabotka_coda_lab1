@@ -2,13 +2,15 @@ from Player import Player
 from Enemy import Enemy
 from Game import Game
 
+
+player_name = input('Enter player`s name: ')
 map_size = list(map(int, input('Enter map size in format: x, y; Input "0" for default map: ').split(', ')))
 
 if map_size[0] == 0:
     map_size = [10, 10]
 
 
-player = Player('Player123', 100, 10, 60)
+player = Player(player_name, 100, 10, 60)
 
 
 enemy = Enemy(200, 10)
