@@ -4,7 +4,16 @@ from Game import Game
 
 
 player_name = input('Enter player`s name: ')
-map_size = list(map(int, input('Enter map size in format: x, y; Input "0" for default map: ').split(', ')))
+map_size = []
+
+
+
+
+
+
+while map_size[0] < 10 or map_size[1] < 10:
+    map_size = list(map(int, input('Enter map size in format: x, y; Input "0" for default map: ').split(', ')))
+    print('Minimum size: 10x10')
 
 if map_size[0] == 0:
     map_size = [10, 10]
