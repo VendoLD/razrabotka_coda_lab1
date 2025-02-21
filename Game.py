@@ -44,10 +44,11 @@ w - up | a - left | s - down | d - right | space - attack
             self.map.render()
             print(self.interface)
             self.update_characters()
-            time.sleep(0.001)
+            time.sleep(0.0001)
+            # print("\033c\033[3J", end="")
             os.system('cls')
 
-    def update_characters(self):
+    def update_characters(self):   
         for character in self.characters:
             if character.hp <= 0:
                 character.kill()
