@@ -45,7 +45,6 @@ w - up | a - left | s - down | d - right | space - attack
             print(self.interface)
             self.update_characters()
             time.sleep(0.0001)
-            # print("\033c\033[3J", end="")
             os.system('cls')
 
     def update_characters(self):   

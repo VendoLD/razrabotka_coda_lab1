@@ -20,11 +20,11 @@ while map_size[0] < 10 or map_size[1] < 10:
 
 
 
-player = Player(player_name, 100, 10, 60)
+player = Player(player_name, hp=100, arm=10, dmg=60)
 
 
-enemy = Enemy(200, 10)
-enemy2 = Enemy(100, 20)
+enemy = Enemy(hp=200, arm=10)
+enemy2 = Enemy(hp=100, arm=20)
 
 
 
